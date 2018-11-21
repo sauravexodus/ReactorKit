@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7DAC9EB321A5851600A15A31 /* ReactorKitRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAC9EB021A5851500A15A31 /* ReactorKitRuntime.m */; };
-		7DAC9EB421A5851600A15A31 /* ReactorKitRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DAC9EB221A5851500A15A31 /* ReactorKitRuntime.h */; };
+		7DAC9EB321A5851600A15A31 /* ReactorKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAC9EB021A5851500A15A31 /* ReactorKit.m */; };
 		7DAC9EBC21A5854200A15A31 /* ActionSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAC9EB521A5854100A15A31 /* ActionSubject.swift */; };
 		7DAC9EBD21A5854200A15A31 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAC9EB621A5854100A15A31 /* View.swift */; };
 		7DAC9EBE21A5854200A15A31 /* StateRelay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAC9EB721A5854100A15A31 /* StateRelay.swift */; };
@@ -24,8 +23,8 @@
 /* Begin PBXFileReference section */
 		7DAC9EA421A5845D00A15A31 /* ReactorKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactorKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DAC9EA821A5845D00A15A31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7DAC9EB021A5851500A15A31 /* ReactorKitRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReactorKitRuntime.m; sourceTree = "<group>"; };
-		7DAC9EB221A5851500A15A31 /* ReactorKitRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactorKitRuntime.h; sourceTree = "<group>"; };
+		7DAC9EB021A5851500A15A31 /* ReactorKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReactorKit.m; sourceTree = "<group>"; };
+		7DAC9EB221A5851500A15A31 /* ReactorKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactorKit.h; sourceTree = "<group>"; };
 		7DAC9EB521A5854100A15A31 /* ActionSubject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionSubject.swift; sourceTree = "<group>"; };
 		7DAC9EB621A5854100A15A31 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		7DAC9EB721A5854100A15A31 /* StateRelay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateRelay.swift; sourceTree = "<group>"; };
@@ -55,7 +54,6 @@
 		7DAC9E9A21A5845D00A15A31 = {
 			isa = PBXGroup;
 			children = (
-				7DAC9EAF21A5851500A15A31 /* ReactorKitRuntime */,
 				7DAC9EA621A5845D00A15A31 /* ReactorKit */,
 				7DAC9EA521A5845D00A15A31 /* Products */,
 				7DAC9EC321A5860B00A15A31 /* Frameworks */,
@@ -73,6 +71,8 @@
 		7DAC9EA621A5845D00A15A31 /* ReactorKit */ = {
 			isa = PBXGroup;
 			children = (
+				7DAC9EB021A5851500A15A31 /* ReactorKit.m */,
+				7DAC9EB221A5851500A15A31 /* ReactorKit.h */,
 				7DAC9EB521A5854100A15A31 /* ActionSubject.swift */,
 				7DAC9EBB21A5854200A15A31 /* AssociatedObjectStore.swift */,
 				7DAC9EB921A5854100A15A31 /* Reactor.swift */,
@@ -84,24 +84,6 @@
 			);
 			name = ReactorKit;
 			path = Sources/ReactorKit;
-			sourceTree = "<group>";
-		};
-		7DAC9EAF21A5851500A15A31 /* ReactorKitRuntime */ = {
-			isa = PBXGroup;
-			children = (
-				7DAC9EB021A5851500A15A31 /* ReactorKitRuntime.m */,
-				7DAC9EB121A5851500A15A31 /* include */,
-			);
-			name = ReactorKitRuntime;
-			path = Sources/ReactorKitRuntime;
-			sourceTree = "<group>";
-		};
-		7DAC9EB121A5851500A15A31 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				7DAC9EB221A5851500A15A31 /* ReactorKitRuntime.h */,
-			);
-			path = include;
 			sourceTree = "<group>";
 		};
 		7DAC9EC321A5860B00A15A31 /* Frameworks */ = {
@@ -121,7 +103,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DAC9EB421A5851600A15A31 /* ReactorKitRuntime.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,7 +202,7 @@
 				7DAC9EBE21A5854200A15A31 /* StateRelay.swift in Sources */,
 				7DAC9EC221A5854200A15A31 /* AssociatedObjectStore.swift in Sources */,
 				7DAC9EBF21A5854200A15A31 /* StoryboardView.swift in Sources */,
-				7DAC9EB321A5851600A15A31 /* ReactorKitRuntime.m in Sources */,
+				7DAC9EB321A5851600A15A31 /* ReactorKit.m in Sources */,
 				7DAC9EC021A5854200A15A31 /* Reactor.swift in Sources */,
 				7DAC9EBD21A5854200A15A31 /* View.swift in Sources */,
 				7DAC9EC121A5854200A15A31 /* Stub.swift in Sources */,

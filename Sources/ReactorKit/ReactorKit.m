@@ -1,5 +1,5 @@
 #import <objc/runtime.h>
-#import "ReactorKitRuntime.h"
+#import "ReactorKit.h"
 
 @implementation NSObject (ReactorKit)
 
