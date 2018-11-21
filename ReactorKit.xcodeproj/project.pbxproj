@@ -42,9 +42,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DAC9ED121A5870600A15A31 /* RxAtomic.framework in Frameworks */,
 				7DAC9ECF21A5870600A15A31 /* RxCocoa.framework in Frameworks */,
 				7DAC9ED021A5870600A15A31 /* RxSwift.framework in Frameworks */,
-				7DAC9ED121A5870600A15A31 /* RxAtomic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
